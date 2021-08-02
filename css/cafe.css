@@ -1,0 +1,617 @@
+html {
+  font-size: 100%;
+  font-family: "Old Standard TT", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+body {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: relative;
+}
+
+.mainVisual {
+  background-image: url(../cafe/pcTop.jpg);
+  min-height: 100vh;
+  padding: 20px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pcNav {
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.pcNav li {
+  margin-left: 30px;
+  position: relative;
+}
+
+.pcNav a {
+  color: #fff;
+  font-weight: bold;
+  filter: drop-shadow(1px 1px 2px #121212);
+}
+
+.nav1::after {
+  content: url(../cafe/under1.png);
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 13px;
+  left: 3px;
+}
+
+.nav1:hover::after {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.nav2::after {
+  content: url(../cafe/under1.png);
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 13px;
+}
+
+.nav2:hover::after {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.nav3::after {
+  content: url(../cafe/under2.png);
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 14px;
+  left: 6px;
+}
+
+.nav3:hover::after {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.nav4::after {
+  content: url(../cafe/under2.png);
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.nav4:hover::after {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.nav5::after {
+  content: url(../cafe/under1.png);
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 11px;
+  left: -11px;
+}
+
+.nav5:hover::after {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+#drawerToggle {
+  margin-left: 22px;
+  z-index: 2;
+}
+
+#drawerToggle span {
+  width: 24px;
+  height: 1px;
+  display: block;
+  background-color: #ffffff;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.spNav {
+  background-color: rgba(0,0,0,0.8);
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1;
+  width: 62%;
+  height: 100vh;
+  padding: 90px 50px 90px 150px;
+  transition: right 0.7s;
+}
+
+.sideOpen {
+  right: 0;
+}
+
+.spNav li {
+  margin-bottom: 26px;
+}
+
+.spNav a{
+  color: #ffffff;
+}
+
+.fa-instagram {
+  font-size: 25px;
+}
+
+.navIcon {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: none;
+}
+
+.fa-shopping-cart {
+   color: #ffffff;
+   font-size: 20px;
+ }
+
+.logo {
+  font-size: 36px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top:45%;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu h2 {
+  position: absolute;
+  top: 30%;
+}
+
+.menuImg {
+  background-image: url(../cafe/menu.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200px;
+}
+
+.menuList {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 90px 16px 100px;
+}
+
+.menuList ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+  padding: 10px 0 40px;
+}
+
+.menuList li {
+  width: 20%;
+  text-align: center;
+}
+
+.menuList img {
+  width: 70%;
+}
+
+.menuTitle {
+  color: #1E1E1B;
+}
+
+.menuTitle h4 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.menuTitle p {
+  font-size: 13px;
+  line-height: 10px;
+}
+
+.menuList span {
+  color: #E8CDCD;
+}
+
+.bread {
+  text-align: center;
+}
+
+.bread li:not(:first-child) {
+  padding-top: 41px;
+}
+
+.pastry {
+  text-align: center;
+}
+
+.pastry li:not(:last-child) {
+  padding-top: 41px;
+}
+
+.memo1 {
+  text-align: left;
+}
+
+.memo1 p {
+  background-color: #E8CDCD;
+  display: inline-block;
+  line-height: 15px;
+  padding: 11px 15px;
+  border-radius: 50%;
+}
+
+.memo2 {
+  text-align: right;
+}
+
+.memo2 p {
+  background-color: #E8CDCD;
+  display: inline-block;
+  line-height: 15px;
+  padding: 11px 15px;
+  border-radius: 50%;
+}
+
+.list {
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 72px;
+  color: #fff;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 50px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dt {
+  width: 80%;
+  border-bottom: dotted 1px #000;
+  margin-bottom: 25px;
+}
+
+dd {
+  width: 20%;
+  text-align: right;
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+
+#food {
+  margin-bottom: 57px;
+}
+
+.about {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+
+.about h2 {
+  position: absolute;
+  top: 30%;
+}
+
+.aboutText {
+  background-color: #E8CDCD;
+  color: #1E1E1B;
+  box-sizing: border-box;
+  width: 556px;
+  padding: 70px 70px 50px;
+  position: absolute;
+  top: 118px;
+  right: 250px;
+}
+
+.aboutImg {
+  background-image: url(../cafe/about.jpg);
+  width: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.subTitle {
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.innerText {
+  letter-spacing: 1px;
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+
+.shipping {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 150px;
+}
+
+.shipping h2 {
+  position: absolute;
+  top: 30%;
+}
+
+.shippingText {
+  background-color: #E8CDCD;
+  color: #1E1E1B;
+  box-sizing: border-box;
+  width: 556px;
+  padding: 70px;
+  position: absolute;
+  top: 118px;
+  left: 250px;
+}
+
+.shippingText a {
+  color: #ffffff;
+  background-color: #727272;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+
+.shippingText a:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.shippingImg {
+  background-image: url(../cafe/shipping.jpg);
+  width: 65%;
+  margin-left: 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.locationImg {
+  background-image: url(../cafe/location.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 200px;
+}
+
+.location {
+  position: relative;
+}
+
+.location h2 {
+  position: absolute;
+  top: 30%;
+}
+
+.map {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 90px 16px 150px 16px;
+}
+
+.mapImg {
+  margin-bottom: 20px;
+}
+
+iframe {
+  filter: grayscale(1);
+  width: 100%;
+  height: 400px;
+}
+
+.mapInfo p {
+  margin-bottom: 10px;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media screen and (max-width:900px){
+
+  .pcNav {
+    display: none;
+  }
+
+  .navIcon {
+    display: flex;
+  }
+
+  #drawerToggle.open {
+    margin-left: 46px;
+  }
+
+  #drawerToggle.open span {
+   top: 9px;
+   right: 1px;
+   position: absolute;
+  }
+
+  #drawerToggle.open span:first-child {
+    transform: rotate(45deg);
+  }
+
+  #drawerToggle.open span:nth-child(2) {
+    display: none;
+  }
+
+  #drawerToggle.open span:last-child {
+    transform: rotate(-45deg);
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+
+  .menu h2 {
+    top: 25%;
+  }
+
+  .mainVisual {
+    background-image: url(../cafe/spTop.jpg);
+  }
+
+  .menuImg {
+    height: 94px;
+    background-attachment: scroll;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .aboutImg {
+    background-image: url(../cafe/about2.jpg);
+    background-attachment: scroll;
+
+  }
+
+  .aboutText {
+    width: 470px;
+    top: 96px;
+    right: 27px;
+  }
+
+  .innerText {
+    font-size: 13px;
+  }
+
+  .shippingText {
+    width: 470px;
+    top: 96px;
+    left: 27px;
+  }
+
+  .shippingImg {
+    background-position: ;
+    background-attachment: scroll;
+    background-size: auto;
+    background-position-x: -962px;
+  }
+
+  .map {
+    padding: 30px 16px 80px 16px;
+  }
+
+  .locationImg {
+    height: 94px;
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width:500px){
+
+  .spNav {
+    padding: 90px 50px;
+  }
+
+  .about {
+      margin-bottom: -600px;
+    }
+
+  .aboutImg {
+    width: 100%;
+    background-position: center;
+  }
+
+  .aboutText {
+    position: initial;
+    width: 300px;
+    padding: 50px;
+    margin: auto;
+    transform: translateY(-574px);
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  .menuList li {
+    width: 50%;
+  }
+
+  .shipping {
+    margin-bottom: -600px;
+  }
+
+  .shippingImg {
+    width: 100%;
+    margin: 0;
+  }
+
+  .shippingText {
+    position: initial;
+    width: 300px;
+    padding: 50px;
+    margin: auto;
+    transform: translateY(-574px);
+  }
+
+
+  }
+
+
+}
