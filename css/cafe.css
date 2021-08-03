@@ -190,7 +190,6 @@ header {
 
 .scroll {
   position: absolute;
-  bottom: 60px;
   right: 5%;
   animation: arrowmove 1.5s ease-in-out infinite;
 }
@@ -524,7 +523,7 @@ footer {
   padding: 10px 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 
   .pcNav {
     display: none;
@@ -563,6 +562,12 @@ footer {
   h3 {
     font-size: 40px;
     margin-bottom: 25px;
+  }
+
+  @keyframes arrowmove {
+    0%{bottom: 2%;}
+    50%{bottom: 4%;}
+    100%{bottom: 2%;}
   }
 
   .menu h2 {
@@ -641,7 +646,7 @@ footer {
     width: 300px;
     padding: 50px;
     margin: auto;
-    transform: translate(0, 0px);
+    transform: translate(0, -450px);
   }
 
   .effect-scroll {
@@ -674,7 +679,7 @@ footer {
     width: 300px;
     padding: 50px;
     margin: auto;
-    transform: translate(0, 0);
+    transform: translate(0, -450px);
   }
 
   .effect-scroll {
