@@ -524,7 +524,7 @@ footer {
   padding: 10px 0;
 }
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .pcNav {
     display: none;
@@ -621,7 +621,7 @@ footer {
   }
 }
 
-@media screen and (max-device-width: 767px){
+@media screen and (max-width: 767px){
 
   .spNav {
     padding: 90px 50px;
