@@ -23,6 +23,7 @@ header {
   background-image: url(../cafe/pcTop.jpg);
   min-height: 100vh;
   padding: 20px 40px;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -185,6 +186,48 @@ header {
 
 .logo img {
   max-width: 100%;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 60px;
+  right: 5%;
+  animation: arrowmove 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowmove {
+  0%{bottom: 1%;}
+  50%{bottom: 3%;}
+  100%{bottom: 1%;}
+}
+
+.scroll span {
+  position: absolute;
+  bottom: 90px;
+  writing-mode: vertical-lr;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.scroll::before {
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  width: 1px;
+  height: 90px;
+  background-color: #ffffff;
+}
+
+.scroll::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  bottom: 40px;
+  width: 1px;
+  height: 30px;
+  background-color: #ffffff;
+  transform: skewX(-30deg);
 }
 
 .menu {
@@ -350,6 +393,14 @@ dd {
   position: absolute;
   top: 118px;
   right: 250px;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 2000ms;
+}
+
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .aboutImg {
@@ -394,6 +445,14 @@ dd {
   position: absolute;
   top: 118px;
   left: 250px;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 2000ms;
+}
+
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .shippingText a {
@@ -465,7 +524,7 @@ footer {
   padding: 10px 0;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-device-width: 1024px) {
 
   .pcNav {
     display: none;
@@ -562,7 +621,7 @@ footer {
   }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-device-width: 767px){
 
   .spNav {
     padding: 90px 50px;
@@ -582,7 +641,11 @@ footer {
     width: 300px;
     padding: 50px;
     margin: auto;
-    transform: translateY(-574px);
+    transform: translate(0, 0px);
+  }
+
+  .effect-scroll {
+    transform: translate(0, -574px);
   }
 
   h3 {
@@ -591,6 +654,10 @@ footer {
 
   .menuList li {
     width: 50%;
+  }
+
+  .memo2 {
+    padding-top: 25px;
   }
 
   .shipping {
@@ -607,11 +674,12 @@ footer {
     width: 300px;
     padding: 50px;
     margin: auto;
-    transform: translateY(-574px);
+    transform: translate(0, 0);
+  }
+
+  .effect-scroll {
+    transform: translate(0, -574px);
   }
 
 
   }
-
-
-}
